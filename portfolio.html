@@ -3,23 +3,35 @@
     <head>
         <meta charset="UTF-8">
         <title>Porfolio Saya</title>
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <h1>My Portfolio<hr/></h1>
-        <h2>Biography</h2>
-        <p>Hai perkenalkan saya Reza Dhia Ulhaq, mahasiswa Teknologi Informasi Universitas Sumatera Utara.</p>
-        <p>Saat ini saya sedang menyelesaikan penelitian tugas akhir saya, selain itu saya juga sedang mengembangkan kemampuan pemrograman saya di Eduwork</p>
-        <h2>Skills</h2>
+    <div id="dasar">
+        <div>
+        <h1 id="heading">My Portfolio<hr/></h1>
+        </div>
+        <div id="isi">
+        <div class="model1">
+        <h2 class="judul1">Biography</h2>
+        <p class="text">Hai perkenalkan saya Reza Dhia Ulhaq, mahasiswa Teknologi Informasi Universitas Sumatera Utara. Saat ini saya sedang menyelesaikan penelitian tugas akhir saya, selain itu saya juga sedang mengembangkan kemampuan pemrograman saya di Eduwork</p>
+        </div>
+        <div class="kotaktengah">
+        <div class="kotak1">
+        <h2 class="judul1">Skills</h2>
         <li>Html</li>
         <li>Css</li>
         <li>Dart</li>
         <li>JavaScript</li>
         <li>Python</li>
-        <h2>Hoby</h2>
+        </div>
+        <div class="kotak2">
+        <h2 class="judul1">Hoby</h2>
         <li>Nonton</li>
         <li>Badminton</li>
         <li>Mendengar Musik</li>
-        <h2>Education</h2>
+        </div>
+        </div>
+        <h2 class="judul1">Education</h2>
         <table border="1px" cellspacing="0" cellpadding="3">
             <tr>
                 <th>No</th>
@@ -52,13 +64,17 @@
                 <td>2013-2015</td>
             </tr>
         </table>
-        <h2>Contact Me</h2>
-        <form>
+        <div class="model1">
+        <h2 class="judul1">Contact Me</h2>
+        <form id="form1">
             <label>First Name</label>
-            <input><br><br>
+            <input id="input1"><br><br>
             <label>Message</label>
-            <input><br><br>
+            <input id="input2"><br><br>
             <button>Submit</button>
         </form>
+        </div>
+        </div>
+    </div>
     </body>
 </html>
