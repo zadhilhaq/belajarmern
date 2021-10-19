@@ -9,7 +9,11 @@
         <script>
             function hasil(){
             let nilai = document.getElementById('nilai').value
-            if(nilai < 20)
+            if(nilai < 0)
+            {
+                alert("Nilai anda Negatif")
+            }
+            else if(nilai < 20)
             {
                 alert("Nilai anda E")
             }
@@ -25,9 +29,13 @@
             {
                 alert ("Nilai anda B")
             }
-            else
+            else if(nilai <= 100)
             {
                 alert ("Nilai anda A")
+            }
+            else
+            {
+                alert ("Nilai anda Melampaui batas")
             }
         }
         </script>
