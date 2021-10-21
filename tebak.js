@@ -6,11 +6,19 @@ btn.addEventListener("click", () => {
 let pointp1 = 0
 let pointp2 = 0
 function game(){
-    let player1 = prompt("Player 1: masukkan angka")
-    let player2 = prompt("Player 2: masukkan angka")
+    let player1 = prompt("Game 1"+"\n"+"Player 1: masukkan angka")
+    let player2 = prompt("Game 1"+"\n"+"Player 2: masukkan angka")
     
     if(player1==player2){
         alert ("tebakan tidak boleh sama")
+        return game()
+    }
+    else if(player1>3 || player2>3){
+        alert ("tebakan tidak boleh lebih dari 3")
+        return game()
+    }
+    else if(player1<1 || player2<1){
+        alert ("tebakan tidak boleh kurang dari 1")
         return game()
     }
     else{
@@ -34,10 +42,18 @@ function game(){
     }
 }
 function game2(){
-    let player1 = prompt("Player 1: masukkan angka")
-    let player2 = prompt("Player 2: masukkan angka")
+    let player1 = prompt("Game 2"+"\n"+"Player 1: masukkan angka")
+    let player2 = prompt("Game 2"+"\n"+"Player 2: masukkan angka")
     if(player1==player2){
         alert ("tebakan tidak boleh sama")
+        return game2()
+    }
+    else if(player1>3 || player2>3){
+        alert ("tebakan tidak boleh lebih dari 3")
+        return game2()
+    }
+    else if(player1<1 || player2<1){
+        alert ("tebakan tidak boleh kurang dari 1")
         return game2()
     }
     else{
@@ -62,10 +78,18 @@ function game2(){
 
 }
 function game3(){
-    let player1 = prompt("Player 1: masukkan angka")
-    let player2 = prompt("Player 2: masukkan angka")
+    let player1 = prompt("Game 3"+"\n"+"Player 1: masukkan angka")
+    let player2 = prompt("Game 3"+"\n"+"Player 2: masukkan angka")
     if(player1==player2){
         alert ("tebakan tidak boleh sama")
+        return game3()
+    }
+    else if(player1>3 || player2>3){
+        alert ("tebakan tidak boleh lebih dari 3")
+        return game3()
+    }
+    else if(player1<1 || player2<1){
+        alert ("tebakan tidak boleh kurang dari 1")
         return game3()
     }
     else{
@@ -90,10 +114,18 @@ function game3(){
 
 }
 function game4(){
-    let player1 = prompt("Player 1: masukkan angka")
-    let player2 = prompt("Player 2: masukkan angka")
+    let player1 = prompt("Game 4"+"\n"+"Player 1: masukkan angka")
+    let player2 = prompt("Game 4"+"\n"+"Player 2: masukkan angka")
     if(player1==player2){
         alert ("tebakan tidak boleh sama")
+        return game4()
+    }
+    else if(player1>3 || player2>3){
+        alert ("tebakan tidak boleh lebih dari 3")
+        return game4()
+    }
+    else if(player1<1 || player2<1){
+        alert ("tebakan tidak boleh kurang dari 1")
         return game4()
     }
     else{
@@ -118,10 +150,18 @@ function game4(){
 
 }
 function game5(){
-    let player1 = prompt("Player 1: masukkan angka")
-    let player2 = prompt("Player 2: masukkan angka")
+    let player1 = prompt("Game 5"+"\n"+"Player 1: masukkan angka")
+    let player2 = prompt("Game 5"+"\n"+"Player 2: masukkan angka")
     if(player1==player2){
         alert ("tebakan tidak boleh sama")
+        return game5()
+    }
+    else if(player1>3 || player2>3){
+        alert ("tebakan tidak boleh lebih dari 3")
+        return game5()
+    }
+    else if(player1<1 || player2<1){
+        alert ("tebakan tidak boleh kurang dari 1")
         return game5()
     }
     else{
