@@ -35,15 +35,18 @@ function game(){
         pointp1=pointp1+1
         alert("player 1 menang")
         alert("nilai yang dicari:" +angka +"\n"+"player 1 ="+ pointp1 + "\n" + "player 2 =" + pointp2)
+        lanjut()
     }
     else if(angka==player2){
         pointp2=pointp2+1
         alert("player 2 menang")
         alert("nilai yang dicari:" +angka +"\n"+"player 1 ="+ pointp1 + "\n" + "player 2 =" + pointp2)
+        lanjut()
     }
     else if(angka!=player1 && angka!=player2){
         alert("tidak ada yang benar hasil seri")
-        alert("nilai yang dicari:" +angka +"\n"+"player 1 ="+ pointp1 + "\n" + "player 2 =" + pointp2)        
+        alert("nilai yang dicari:" +angka +"\n"+"player 1 ="+ pointp1 + "\n" + "player 2 =" + pointp2) 
+        lanjut()       
     }
 }
 function hasil(){
@@ -59,7 +62,7 @@ function hasil(){
 }
 function lanjut(){
     if(confirm("Lanjut??")){
-        return game()
+        return
     }
     else{
         throw "exit"
