@@ -1,7 +1,7 @@
 function searchShow(query){
   const url = `https://newsapi.org/v2/top-headlines?q=${query}&country=id&apiKey=e70513e7c56a406fa8587bd8ecd6744f`
   fetch(url)
-  .then(response => response.json(console.log(response)))
+  .then(response => response.json())
   .then(response => {
         
     const results = response.articles
@@ -9,6 +9,15 @@ function searchShow(query){
     console.log(results)
   })
 }
+ function tanpaQuery() {
+   const url = `https://newsapi.org/v2/top-headlines?country=id&apiKey=e70513e7c56a406fa8587bd8ecd6744f`
+   fetch(url)
+   .then(response => response.json())
+   .then(response => {
+    const results = response.articles
+    renderResults(results)
+   })
+ }
 
 function renderResults(results){
   const list = document.querySelector('.resultsList')
@@ -22,6 +31,7 @@ window.onload = () => {
   searchFieldElement.onkeyup = ()=>{
     searchShow(searchFieldElement.value)
   }
+  tanpaQuery()
 }
 
 function showCards(m) {
