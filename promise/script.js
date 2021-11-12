@@ -1,5 +1,6 @@
-function searchShow(query){
-  const url = `https://newsapi.org/v2/top-headlines?q=${query}&country=id&apiKey=e70513e7c56a406fa8587bd8ecd6744f`
+function searchShow(){
+  const searchField = document.querySelector('.searchField')
+  const url = 'https://newsapi.org/v2/top-headlines?q='+searchField.value+'&country=id&apiKey=1123d6ff28c6446b934f2e58cc959ab8'
   fetch(url)
   .then(response => response.json())
   .then(response => {
@@ -10,7 +11,7 @@ function searchShow(query){
   })
 }
  function tanpaQuery() {
-   const url = `https://newsapi.org/v2/top-headlines?country=id&apiKey=e70513e7c56a406fa8587bd8ecd6744f`
+   const url = `https://newsapi.org/v2/top-headlines?country=id&apiKey=1123d6ff28c6446b934f2e58cc959ab8`
    fetch(url)
    .then(response => response.json())
    .then(response => {
@@ -18,6 +19,7 @@ function searchShow(query){
     renderResults(results)
    })
  }
+
 
 function renderResults(results){
   const list = document.querySelector('.resultsList')
@@ -27,10 +29,10 @@ function renderResults(results){
 }
 
 window.onload = () => {
-  const searchFieldElement = document.querySelector('.searchField')
-  searchFieldElement.onkeyup = ()=>{
-    searchShow(searchFieldElement.value)
-  }
+  const searchButton = document.querySelector('.searchbutton')
+  searchButton.addEventListener('click', function() {
+    searchShow(searchButton.value)
+  })
   tanpaQuery()
 }
 
